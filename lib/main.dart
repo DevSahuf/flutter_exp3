@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Basic widget"),
           backgroundColor: Colors.purple,
-          
+
           ),
            drawer: Drawer(
             child: ListView(children: <Widget>[
@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
               children: [
                 Image.asset('assets/images/404.png',
                  width: 200),
+                Image.network('https://picsum.photos/250?image=9'),
                  SizedBox(height: 20),
                  Text("404 not found"),],),
               
